@@ -3,8 +3,24 @@
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
 }
+
+:root[data-theme="light"]{
+    --background-principal: #333333;
+    --background-secundario: #ffffff;
+    --color-principal:#333333;
+}
+
+
+:root[data-theme="dark"]{
+    --background-principal: #233056;
+    --background-secundario: #090C15;
+    --color-principal: #fff;
+}
+body{
+    background-color: var(--background-secundario);
+}
 header{
-    background-color: #333333;
+    background-color:var(--background-principal);
 }
 
 a{
@@ -86,7 +102,7 @@ a{
 
 .menu{
     position: absolute;
-    background-color: #333333;
+    background-color: var(--background-principal);
     text-align: center;
     text-transform: uppercase;
     right: 0px;
@@ -162,7 +178,7 @@ a{
     
 }
 .sec-1{
-    background: white;
+    background-color: var(--background-secundario);
 }
 .container{
     margin-left: auto;
@@ -173,7 +189,7 @@ a{
     padding-top: 20px;
     text-align: center;
     margin-top: 20px;
-    color: #333333;
+    color: var(--color-principal);
     max-width: 735px;
 }
 .verd{
@@ -183,7 +199,7 @@ a{
     margin-top: 40px;
     margin-bottom: 10px;
     font-size: 30px;
-    color: #333333;
+    color: var(--color-principal);
 }
 .flex{
     display: flex;
@@ -303,10 +319,11 @@ a{
     font-size: 12px;
 }
 .footer-container{
-    background-color: #333333;
+    background-color: var(--background-principal);
 }
 footer{
     display: flex;
+    background-color: var(--background-secundario);
     flex-direction: column;
     justify-content: end;
     min-height: calc(
