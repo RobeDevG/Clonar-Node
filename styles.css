@@ -106,7 +106,7 @@ a{
     text-align: center;
     text-transform: uppercase;
     right: 0px;
-    top:210px;
+    top:230px;
     height: 300px;
     width: 100vw;
     overflow: auto;
@@ -120,18 +120,18 @@ a{
 }
 @media (min-width:416px){
     .menu{
-        top:140px
+        top:150px
     }
 }
 
 
-@media (min-width:829px){
+@media (width > 706px){
     .menu{
-        top:100px
+        top:110px
     }
 }
 
-@media (min-width:1136px){
+@media (width > 1135px){
     .menu{
         top:30px;
         width: 150px;
